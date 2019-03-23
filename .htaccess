@@ -1,0 +1,4 @@
+RewriteEngine On
+RewriteBase /
+RewriteCond %{HTTP_HOST} !^www.sedatbodur.com.tr$ [NC]
+RewriteRule ^(.*)$https://www.sedatbodur.com.tr//$1 [L,R=301]
